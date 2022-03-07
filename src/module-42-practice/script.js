@@ -74,4 +74,20 @@ const priceHigherThanTwentyThousand = products.filter((product) => product.price
 console.log(...priceHigherThanTwentyThousand);
 
 products.forEach((product) => console.log(product.price));
-products.forEach((product) => console.log(product.price));
+
+const remaining = products.filter((product) => product.name !== 'phone');
+console.log(remaining);
+
+if ([]) {
+    console.log('ok');
+}
+const money = 400;
+const food1 = money > 200 ? 'ok' : 'not okay';
+console.log(food1);
+
+console.log(money.toString(16));
+
+const input = '444';
+const inputNUm = +input;
+console.log(input);
+console.log(inputNUm);
