@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable no-unused-vars */
-localStorage.setItem('userId', 2212142);
 
 const addToLocalStorage = () => {
     const idInput = document.getElementById('storage-id');
@@ -8,7 +8,15 @@ const addToLocalStorage = () => {
     const val = valueInput.value;
 
     //
-    localStorage.setItem(id, val);
+
+    id && val ? localStorage.setItem(id, val) : '';
+
     idInput.value = '';
     valueInput.value = '';
+};
+
+const getData = () => {
+    const data = { ...localStorage };
+    const div = document.querySelector('#data');
+    div.innerHTML = data;
 };
