@@ -74,3 +74,4 @@ const priceHigherThanTwentyThousand = products.filter((product) => product.price
 console.log(...priceHigherThanTwentyThousand);
 
 products.forEach((product) => console.log(product.price));
+products.forEach((product) => console.log(product.price));
