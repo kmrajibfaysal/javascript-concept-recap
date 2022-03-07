@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-expressions */
 const arr = [1, 2, 3, 4, 5];
 arr.push(2);
 arr.pop();
@@ -91,3 +93,16 @@ const input = '444';
 const inputNUm = +input;
 console.log(input);
 console.log(inputNUm);
+
+let isActive = false;
+const showUser = () => console.log('display user');
+const hideUser = () => console.log('Hide user');
+
+// isActive ? showUser() : hideUser();
+
+// isActive && showUser();
+// !isActive && hideUser();
+
+isActive || hideUser();
+
+isActive = !isActive;
